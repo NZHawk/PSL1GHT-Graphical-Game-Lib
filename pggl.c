@@ -24,9 +24,9 @@
 #include <pngdec/pngdec.h>
 #include <pngdec/loadpng.h>
 
-#define NUMERALLOCATION "/dev_usb001/BOMBERMAN/USRDIR/FONT/numerals/"
-#define UPPERCASELOCATION "/dev_usb001/BOMBERMAN/USRDIR/FONT/upperCase/"
-#define LOWERCASELOCATION "/dev_usb001/BOMBERMAN/USRDIR/FONT/lowerCase/"
+#define NUMERALLOCATION "/dev_usb000/FONT/numerals/"
+#define UPPERCASELOCATION "/dev_usb000/FONT/upperCase/"
+#define LOWERCASELOCATION "/dev_usb000/FONT/lowerCase/"
 #define CHARWIDTH 80  //In PX - Width of character PNG
 #define CHARHEIGHT 80 //In PX - Height of character PNG
 
