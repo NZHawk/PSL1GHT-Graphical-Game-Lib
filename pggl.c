@@ -105,7 +105,6 @@ void draw(char input[], int posx, int posy) {
 	x = posx;
 	y = posy;
 	for(int i = 0; i < strlen(input); i++){
-		x += CHARWIDTH;
 		switch(input[i])
 		{
 			// Numbers
@@ -302,11 +301,13 @@ void draw(char input[], int posx, int posy) {
 				break;
 			case '\n':
 				y += CHARHEIGHT;
+				x = posx - CHARWIDTH;
 				break;
 			case ' ':
 				x += CHARWIDTH;
 				break;
 		}
+		x += CHARWIDTH;
 	}
 }
 
