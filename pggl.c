@@ -316,7 +316,6 @@ void drawInt(int inumber, int posx, int posy) {
 	sprintf(num, "%i", inumber);
 	int x = posx;
 	for(int i = 0; i < strlen(num); i++){
-		x += CHARWIDTH;
 		switch(num[i])
 		{
 			case '0':
@@ -350,6 +349,7 @@ void drawInt(int inumber, int posx, int posy) {
 				drawPNG(num9, x, posy);
 				break;
 		}
+		x += CHARWIDTH;
 	}
 }
 
