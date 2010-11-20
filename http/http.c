@@ -42,11 +42,9 @@ void httpGet(char *ip, char *host, char *path)
 		getpage = getpage + 1;
 		fprintf(stderr,"Removing leading \"/\", converting %s to %s\n", path, getpage);
 	}
-	// -5 is to consider the %s %s %s in tpl and the ending \0
 	query = (char *)malloc(strlen(host)+strlen(getpage)+strlen(USERAGENT)+strlen(tpl)-5);
 	sprintf(query, tpl, getpage, host, USERAGENT);
-	//getRequest = build_get_query("66.102.11.104", "/");
-	/* send our get request for http */
+
 	printf(query, "\n\n\n");
 	if (send(s, query, strlen(query), 0) == -1) {
 		printf("Error sending data.");
